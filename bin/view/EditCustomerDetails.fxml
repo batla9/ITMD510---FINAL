@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditCustomerDetailsController">
+   <children>
+      <TableView fx:id="customertable" editable="true" layoutX="17.0" layoutY="75.0" prefHeight="322.0" prefWidth="565.0">
+         <columns>
+            <TableColumn fx:id="custid" prefWidth="48.66666030883789" text="ID" />
+            <TableColumn fx:id="custname" prefWidth="102.66670989990234" text="NAME" />
+            <TableColumn fx:id="custemail" minWidth="0.0" prefWidth="141.3333282470703" text="EMAIL" />
+            <TableColumn fx:id="custaddr" prefWidth="182.00006103515625" text="ADDRESS" />
+            <TableColumn fx:id="custphone" prefWidth="88.66659545898438" text="PHONE" />
+         </columns>
+      </TableView>
+      <Label layoutX="138.0" layoutY="23.0" text="Customer Detail Operations">
+         <font>
+            <Font name="Comic Sans MS" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usercustid" layoutX="17.0" layoutY="421.0" prefHeight="25.0" prefWidth="41.0" promptText="ID" />
+      <TextField fx:id="usercustname" layoutX="62.0" layoutY="421.0" prefHeight="25.0" prefWidth="137.0" promptText="Customer Name" />
+      <TextField fx:id="usercustemail" layoutX="202.0" layoutY="421.0" prefHeight="25.0" prefWidth="137.0" promptText="Email" />
+      <TextField fx:id="usercustaddr" layoutX="344.0" layoutY="421.0" prefHeight="25.0" prefWidth="151.0" promptText="Address" />
+      <Button layoutX="348.0" layoutY="460.0" mnemonicParsing="false" onAction="#updateCustDbAction" text="Update" />
+      <Button layoutX="412.0" layoutY="460.0" mnemonicParsing="false" onAction="#deleteCustDbAction" text="Delete" />
+      <Button layoutX="478.0" layoutY="460.0" mnemonicParsing="false" onAction="#backBtnAction" text="Back" />
+      <Button layoutX="528.0" layoutY="460.0" mnemonicParsing="false" onAction="#logoutBtnAction" text="Logout" />
+      <TextField fx:id="usercustphone" layoutX="499.0" layoutY="421.0" prefHeight="25.0" prefWidth="83.0" promptText="Phone" />
+      <Label fx:id="dbOperationsMsg" layoutX="17.0" layoutY="463.0" prefHeight="20.0" prefWidth="315.0" textFill="#1e23ab">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
