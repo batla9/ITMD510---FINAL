@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerMenuPageController">
+   <children>
+      <Hyperlink fx:id="home" contentDisplay="CENTER" layoutX="36.0" layoutY="14.0" onAction="#Home" text="Home">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="aboutus" layoutX="112.0" layoutY="14.0" onAction="#AboutUs" text="About Us">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="contactus" layoutX="225.0" layoutY="14.0" onAction="#ContactUs" text="Contact Us">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="customer" layoutX="457.0" layoutY="14.0" onAction="#CustomerLogin" text="Customer Login">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="admin" layoutX="339.0" layoutY="14.0" onAction="#AdminLogin" text="Admin Login">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="36.0" layoutY="45.0" prefHeight="44.0" prefWidth="283.0" text="Menu" textFill="#900808">
+         <font>
+            <Font name="Comic Sans MS Bold" size="26.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="pav" fitHeight="100.0" fitWidth="150.0" layoutX="49.0" layoutY="104.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../res/images/Pavbhaji.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="masalap" fitHeight="100.0" fitWidth="150.0" layoutX="230.0" layoutY="104.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../res/images/MasalaPuri.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dahip" fitHeight="100.0" fitWidth="150.0" layoutX="404.0" layoutY="104.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../res/images/DahiPuri.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="idli" fitHeight="100.0" fitWidth="150.0" layoutX="230.0" layoutY="236.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../res/images/IdliSambar.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bhel" fitHeight="100.0" fitWidth="150.0" layoutX="404.0" layoutY="236.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../res/images/BhelPuri.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cheesy" fitHeight="100.0" fitWidth="150.0" layoutX="50.0" layoutY="236.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../res/images/CheeseSandwich.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="90.0" layoutY="204.0" text="PavBhaji">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="221.0" text="\$10">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="204.0" text="Masala Puri">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="469.0" layoutY="221.0" text="\$12">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="459.0" layoutY="204.0" text="Dahi Puri">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="295.0" layoutY="221.0" text="\$12">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="338.0" text="Cheese Sandwich">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="353.0" text="\$20">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="275.0" layoutY="338.0" text="Idli Sambar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="297.0" layoutY="355.0" text="\$15">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="459.0" layoutY="338.0" text="Bhel Puri">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="474.0" layoutY="355.0" text="\$12">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="100.0" fitWidth="150.0" layoutX="814.0" layoutY="310.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../res/images/PaniPuri.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cabbage" fitHeight="100.0" fitWidth="150.0" layoutX="233.0" layoutY="370.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../res/images/CabbageVada.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sabudana" fitHeight="100.0" fitWidth="150.0" layoutX="404.0" layoutY="370.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../res/images/SabudanaVada.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="medu" fitHeight="100.0" fitWidth="150.0" layoutX="54.0" layoutY="370.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../res/images/MeduVada.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="107.0" layoutY="470.0" text="Medu Vada">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="485.0" text="\$20">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="267.0" layoutY="470.0" text="Cabbage Vada">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="305.0" layoutY="485.0" text="\$15">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="435.0" layoutY="470.0" text="Sabudana Vada">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="469.0" layoutY="485.0" text="\$12">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="100.0" fitWidth="150.0" layoutX="814.0" layoutY="456.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../res/images/PaniPuri.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
